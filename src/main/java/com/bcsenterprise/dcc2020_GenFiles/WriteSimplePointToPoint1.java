@@ -41,7 +41,7 @@ public class WriteSimplePointToPoint1 {
         jo2.put("Position", ja2);
         
         ja.add(jo1);
-        ja.add(ja1);
+
         ja.add(jo2);
         ja.add(ja2);
         
