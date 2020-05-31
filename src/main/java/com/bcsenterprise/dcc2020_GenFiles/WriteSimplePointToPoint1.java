@@ -3,6 +3,8 @@ package com.bcsenterprise.dcc2020_GenFiles;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -26,7 +28,9 @@ public class WriteSimplePointToPoint1 {
         jo.put("Position", ja);
         
         try (FileWriter fw = new FileWriter("SimplePointToPoint.json")){
-            fw.write(str);
-        }
+            fw.write(jo.toJSONString());
+        } catch (IOException ex) {
+            Logger.getLogger(WriteSimplePointToPoint1.class.getName()).log(Level.SEVERE, null, ex);
+        } 
     }
 }
