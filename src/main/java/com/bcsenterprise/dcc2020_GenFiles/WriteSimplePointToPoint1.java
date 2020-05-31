@@ -16,7 +16,17 @@ public class WriteSimplePointToPoint1 {
     {
         JSONObject jo = new JSONObject();
         jo.put("manager", "mouse");
-        jo.put("X", 100);
-        jo.put("Y", 100);
+        
+        JSONArray ja = new JSONArray();
+        ja.add("X");
+        ja.add(100);
+        ja.add("Y");
+        ja.add(100);
+        
+        jo.put("Position", ja);
+        
+        try (FileWriter fw = new FileWriter("SimplePointToPoint.json")){
+            fw.write(str);
+        }
     }
 }
