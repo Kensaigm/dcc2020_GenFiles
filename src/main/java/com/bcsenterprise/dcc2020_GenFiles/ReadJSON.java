@@ -45,7 +45,7 @@ public class ReadJSON {
         String fName = (String)jFile.get("name").toString();
         System.out.println("File Name:" + fName);
         
-        float key = (Float)jFile.get("key");
+        double key = Double.valueOf(jFile.get("key").toString());
         System.out.println("Key:" + key);
         
         boolean enabled = (boolean)jFile.get("enabled");
