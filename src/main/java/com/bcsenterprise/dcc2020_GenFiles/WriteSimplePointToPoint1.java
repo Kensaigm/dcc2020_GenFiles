@@ -43,7 +43,7 @@ public class WriteSimplePointToPoint1 {
         ja.add(jo1);
 
         ja.add(jo2);
-        ja.add(ja2);
+        
         
         try (FileWriter fw = new FileWriter("SimplePointToPoint.json")){
             fw.write(ja.toJSONString());
