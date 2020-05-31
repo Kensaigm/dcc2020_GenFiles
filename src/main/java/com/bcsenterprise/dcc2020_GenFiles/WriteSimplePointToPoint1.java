@@ -27,6 +27,15 @@ public class WriteSimplePointToPoint1 {
         
         jo.put("Position", ja);
         
+        jo.put("manager", "mouse");
+        ja = new JSONArray();
+        ja.add("X");
+        ja.add(100);
+        ja.add("Y");
+        ja.add(100);
+        
+        jo.put("Position", ja);
+        
         try (FileWriter fw = new FileWriter("SimplePointToPoint.json")){
             fw.write(jo.toJSONString());
         } catch (IOException ex) {
