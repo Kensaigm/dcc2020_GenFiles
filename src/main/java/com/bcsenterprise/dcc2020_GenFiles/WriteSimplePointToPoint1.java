@@ -28,13 +28,15 @@ public class WriteSimplePointToPoint1 {
         jo.put("Position", ja);
         
         jo.put("manager", "mouse");
-        ja = new JSONArray();
-        ja.add("X");
-        ja.add(100);
-        ja.add("Y");
-        ja.add(100);
         
-        jo.put("Position", ja);
+        
+        JSONArray ja2 = new JSONArray();
+        ja2.add("X");
+        ja2.add(200);
+        ja2.add("Y");
+        ja2.add(200);
+        
+        jo.put("Position", ja2);
         
         try (FileWriter fw = new FileWriter("SimplePointToPoint.json")){
             fw.write(jo.toJSONString());
