@@ -49,7 +49,7 @@ public class ReadJSON {
         System.out.println("Key:" + key);
         
         boolean enabled = (boolean)jFile.get("enabled");
-        System.out.println("Enabled ==" + enabled);
+        System.out.println("Enabled == " + enabled);
         
     }
     
