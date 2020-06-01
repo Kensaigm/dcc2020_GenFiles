@@ -19,15 +19,15 @@ public class WriteSimplePointToPoint1 {
         JSONArray ja = new JSONArray();
         
         JSONObject jo1 = new JSONObject();
-        jo1.put("manager", "mouse");
         
         JSONArray ja1 = new JSONArray();
+        ja1.add("Position");
         ja1.add("X");
         ja1.add(100);
         ja1.add("Y");
         ja1.add(100);
         
-        jo1.put("Position", ja1);
+        jo1.put(ManagerEnum.MSE, ja1);
         
         JSONObject jo2 = new JSONObject();
         jo2.put("manager", "mouse");
